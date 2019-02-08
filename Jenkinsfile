@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo 'Hello World!' 
+                python -m py_compile sources/add2vals.py sources/calc.py 
             }
         }
     }
